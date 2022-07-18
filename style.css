@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face{
+    font-family: 'Android';
+    src: url('pacote-projeto-d010/fontes/idroid.otf')  format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor01: #c5ebd6;
+    --cor02: #83e1ad;
+    --cor03: #3ddc84;
+    --cor04: #2fa866;
+    --cor05: #1a5c37;
+    --cor06: #063d1e;  
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+    }
+    
+  *{
+    margin: 0px;
+    padding: 0px;
+  }  
+    body{
+        background-color: var(--cor04);
+        font-family: var(--fonte-padrao);       
+    }
+
+    a.externo::after{
+        content: '\00A0\1F517';
+    }
+
+    header > h1 {
+        color: white;
+        font-family: var(--fonte-destaque);
+        margin-bottom: 20px;
+        font-weight: normal;
+    }
+
+    header  {
+        background-image: linear-gradient(to bottom,  var(--cor03), var(--cor05));
+        min-height: 150px;
+        background-color:var(--cor05);
+        margin: auto;
+        padding-top: 40px;
+        text-align: center;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+        
+    }
+
+     header > p{
+        color: white;
+        font-family: var(--fonte-padrao);
+        font-size: 1.2em;
+        max-width: 600px;
+        margin: auto;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+        }
+
+    nav{
+        background-color: var(--cor05);
+        color: white;
+        padding: 10px;
+        box-shadow: 0px 0px rgba(0, 0, 0, 0.438);
+    }
+    nav > a{
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        transition-duration: 0.5s;
+    }
+
+    nav > a:hover{
+        background-color: var(--cor04);
+    }
+
+    main > h1,h2{
+        font-family: var(--fonte-android);
+        background-image: linear-gradient(to right, var(--cor03), transparent);
+        color: var(--cor05);
+        text-indent: 8px;
+        font-weight: normal;
+    }
+
+    main  p{
+        margin: 15px 0px;
+        text-align: justify;
+        text-indent: 30px;
+        font-size: 1em;
+        line-height: 2em;
+    }
+
+    main  a{
+        text-decoration: none;
+        font-weight: bold;
+        color:var(--cor05);
+        background-color: var(--cor01);
+        padding: 2px 6px;
+    }
+    main a:hover{
+        text-decoration: underline;
+        color: var(--cor04);
+    }
+    main{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 20px;
+        margin: auto;
+        min-width: 300px;
+        max-width: 1000px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+        background-color: white;
+     
+    }
+
+    div.video{
+        background-color: var(--cor05);
+        margin: 0px -20px 30px -20px;
+        padding: 20px;
+        padding-bottom: 59%;
+        position: relative;        
+    }
+
+        div.video > iframe{
+            position: absolute;
+            top: 5% ;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+
+    main img.pequena{
+        max-width: 350px;
+        display: block;
+        margin: auto;
+    }
+ 
+        img{
+            width: 80%;
+            margin: auto;
+            display: block;
+        }
+
+    aside{
+        background-color: var(--cor01);        
+        padding: 20px;
+        border-radius: 10px 10px 10px rgba(0, 0, 0, 0.411);
+    }
+
+    aside> h2{
+        font-family: var(--fonte-padrao);
+        }
+
+        aside h3{
+           color: white;
+           background-color: var(--cor05); 
+           padding: 10px;
+           margin: -10px -10px 0px -10px ;
+           border-radius: 10px 10px 0px 0px;
+        }
+   aside ul{
+        list-style-position: inside;
+        list-style-type: '\2714\0020\0020';
+        columns: 2;
+        text-align: justify;
+        padding: 10px 5px;
+        margin: auto;
+        text-indent: 20px;
+    }
+
+    footer{
+        background-color: var(--cor05);
+       color: white;
+       text-align: center;
+       font-size: 0.8em;
+       padding: 5px;
+    }
+
+    footer a{
+        color: white;
+        font-weight: bolder;
+        text-decoration: none;
+        
+    }
+    footer a:hover{
+        text-decoration: underline;
+        color: var(--cor01);
+    }
+    strong{
+        color: var(--cor05);
+        font-weight: bold;       
+    }
